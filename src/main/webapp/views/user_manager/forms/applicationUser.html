@@ -1,0 +1,65 @@
+
+
+<!-- id activated activationKey email firstName langKey lastName login tenantId password  -->
+<div class="modal fade" id="saveUserManagerApplicationUserModal" tabindex="-1" role="dialog" aria-labelledby="myDeviceLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form name="form" role="form" novalidate  class="ng-scope ng-invalid ng-invalid-required ng-dirty ng-valid-minlength" ng-submit="create()">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" ng-click="clear()">&times;</button>
+                    <h4 class="modal-title" id="myDeviceLabel">Create or edit a ApplicationUser</h4>
+                </div>
+                <div class="modal-body">
+                                                                                                        <div class="form-group">
+                                    <label>ID</label>
+                                    <input type="text" class="form-control" name="id"  ng-model="modelData.id" readonly>
+                                </div>
+                                                                                                                                                            <div class="form-group">
+                                    <label>activated</label>
+                                    <input type="checkbox" class="form-control" name="activated" ng-model="modelData.activated">
+                                </div>
+                                                                                                                                                            <div class="form-group">
+                                    <label>activationKey</label>
+                                    <input type="text" class="form-control" name="activationKey" ng-model="modelData.activationKey" ng-minlength=1 ng-maxlength=20  >
+                                </div>
+                                                                                                                                                            <div class="form-group">
+                                    <label>email</label>
+                                    <input type="text" class="form-control" name="email" ng-model="modelData.email" ng-minlength=1 ng-maxlength=50  >
+                                </div>
+                                                                                                                                                            <div class="form-group">
+                                    <label>firstName</label>
+                                    <input type="text" class="form-control" name="firstName" ng-model="modelData.firstName" ng-minlength=1 ng-maxlength=50  >
+                                </div>
+                                                                                                                                                            <div class="form-group">
+                                    <label>langKey</label>
+                                    <input type="text" class="form-control" name="langKey" ng-model="modelData.langKey" ng-minlength=1 ng-maxlength=5  >
+                                </div>
+                                                                                                                                                            <div class="form-group">
+                                    <label>lastName</label>
+                                    <input type="text" class="form-control" name="lastName" ng-model="modelData.lastName" ng-minlength=1 ng-maxlength=50  >
+                                </div>
+                                                                                                                                                            <div class="form-group">
+                                    <label>login</label>
+                                    <input type="text" class="form-control" name="login" ng-model="modelData.login" ng-minlength=1 ng-maxlength=50  >
+                                </div>
+                                                                                                                                                            <div class="form-group">
+                                    <label>tenantId</label>
+                                    <input type="text" class="form-control" name="tenantId" ng-model="modelData.tenantId" ng-minlength=1 ng-maxlength=50  >
+                                </div>
+                                                                                                                                                            <div class="form-group">
+                                    <label>password</label>
+                                    <input type="text" class="form-control" name="password" ng-model="modelData.password" ng-minlength=1 ng-maxlength=100  >
+                                </div>
+                                                                                        </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                        <span class="glyphicon glyphicon-ban-circle"></span> Cancel
+                    </button>
+                    <button type="submit" ng-disabled="form.$invalid" class="btn btn-primary">
+                        <span class="glyphicon glyphicon-save"></span> Save
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

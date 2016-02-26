@@ -1,0 +1,30 @@
+
+
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul side-navigation class="nav" id="side-menu">
+            <li class="nav-header">
+
+                <div ng-include="'views/common/profile.html'"></div>
+
+            </li>
+            <li>
+                <a ui-sref="index.main"><i class="fa fa-laptop"></i> <span class="nav-label">Main page</span> </a>
+            </li>
+                    <li ui-sref-active="active">
+            <a ui-sref="user_manager.applicationAuthority"><i class="fa fa-table"></i> <span class="nav-label">applicationAuthority</span></a>
+            </li>
+                    <li ui-sref-active="active">
+            <a ui-sref="user_manager.applicationPersistentToken"><i class="fa fa-table"></i> <span class="nav-label">applicationPersistentToken</span></a>
+            </li>
+                    <li ui-sref-active="active">
+            <a ui-sref="user_manager.applicationUser"><i class="fa fa-table"></i> <span class="nav-label">applicationUser</span></a>
+            </li>
+                    <li ui-sref-active="active">
+            <a ui-sref="user_manager.applicationUserAuthority"><i class="fa fa-table"></i> <span class="nav-label">applicationUserAuthority</span></a>
+            </li>
+        
+        </ul>
+
+    </div>
+</nav>

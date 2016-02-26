@@ -1,0 +1,122 @@
+<!--
+* INSPINIA - Responsive Admin Theme
+* Copyright 2015 Webapplayers.com
+* Version 1.9
+*
+-->
+
+<!DOCTYPE html>
+<html ng-app="catwalk">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- Page title set in pageTitle directive -->
+    <title page-title></title>
+
+    <!-- Google Open Sans -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <!-- build:css({.tmp,app}) styles/vendor.css -->
+    <!-- bower:css --
+    <!-- Font awesome -->
+    <link href="bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main Inspinia CSS files -->
+    <link href="styles/animate.css" rel="stylesheet">
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css({.tmp,app}) styles/style.css -->
+    <link href="styles/style.css" rel="stylesheet">
+    <!-- endbuild -->
+
+
+
+</head>
+
+<!-- ControllerAs syntax -->
+<!-- Main controller with serveral data used in Inspinia theme on diferent view -->
+<body ng-controller="MainCtrl as main">
+
+<!-- Main view  -->
+<div  ui-view></div>
+
+
+<!-- build:js({.tmp,app}) scripts/vendor.js -->
+
+<!-- jQuery and Bootstrap -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- MetsiMenu -->
+<script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+<!-- SlimScroll -->
+<script src="bower_components/slimScroll/jquery.slimscroll.min.js"></script>
+
+<!-- Peace JS -->
+<script src="bower_components/PACE/pace.min.js"></script>
+
+<!-- Angular scripts-->
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="bower_components/angular-translate/angular-translate.js"></script>
+<script src="bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.js"></script>
+<script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+<script src="bower_components/trNgGrid/release/trNgGrid.min.js"></script>
+
+<!-- Angular Dependiences -->
+<!--                      -->
+<!--                      -->
+<!--                      -->
+
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<!-- Custom and plugin javascript -->
+<script src="scripts/system/inspinia.js"></script>
+
+<!-- Anglar App Script -->
+<script src="scripts/app.js"></script>
+
+<!-- Security -->
+<script src="scripts/system/security/http-auth-interceptor.js"></script>
+<script src="scripts/system/security/security_services.js"></script>
+<script src="scripts/system/security/security_controllers.js"></script>
+<script src="scripts/system/security/security_config.js"></script>
+<!-- Config -->
+<script src="scripts/config.js"></script>
+<script src="scripts/system/directives.js"></script>
+<script src="scripts/controllers.js"></script>
+
+<!-- Services Controllers And Routers-->
+<script src="scripts/modules/devapptv/devapptv_base_service.js"></script>
+<script src="scripts/modules/devapptv/devapptv_base_controller.js"></script>
+<script src="scripts/modules/devapptv/devapptv_base_config.js"></script>
+<script src="scripts/modules/devapptv/video.js"></script>
+<script src="scripts/modules/devapptv/coursevideo.js"></script>
+<script src="scripts/modules/devapptv/artist.js"></script>
+<script src="scripts/modules/user_manager/user_manager_base_service.js"></script>
+<script src="scripts/modules/user_manager/user_manager_base_controller.js"></script>
+<script src="scripts/modules/user_manager/user_manager_base_config.js"></script>
+<script src="scripts/modules/user_manager/application_authority.js"></script>
+<script src="scripts/modules/user_manager/application_persistent_token.js"></script>
+<script src="scripts/modules/user_manager/application_user.js"></script>
+<script src="scripts/modules/user_manager/application_user_authority.js"></script>
+
+
+
+<!-- endbuild -->
+
+</body>
+</html>

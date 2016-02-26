@@ -1,0 +1,7 @@
+target
+target.bak
+.idea
+*.ipr
+*.iws
+*.iml
+src/main/webapp/bower_components

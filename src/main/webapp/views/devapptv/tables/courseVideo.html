@@ -1,0 +1,63 @@
+
+
+<div ng-include src="'views/devapptv/forms/courseVideo.html'"></div>
+    <div class="table-responsive">
+<!-- on-data-required="onServerSideItemsRequested(currentPage, filterBy, filterByFields, orderBy, orderByReverse) -->
+        <table tr-ng-grid="" class="table table-striped" page-items="queryParameters.rows" total-items="modelList.totalrecords"
+               items="modelList.rows" selection-mode="MultiRowWithKeyModifiers">
+            <thead>
+            <tr>
+                                                            <th field-name="id" display-name="id"></th>
+                                                                                                                            <th cell-width="5em">
+                    <br><br>
+                    <button class="btn btn-success" data-toggle="modal" data-target="#saveDevapptvCourseVideoModal" ng-click="clear()">
+                        <span class="glyphicon glyphicon-flash"></span> New
+                    </button>
+                </th>
+                <th cell-width="8em">
+                    <br><a>Rows</a><br>
+                    <ul class="nav nav-pills">
+                        <li class="dropdown pointer">
+                            <a class="dropdown-toggle" data-toggle="dropdown">
+                                <span>
+                                    <span class="glyphicon glyphicon-eye-open"></span>&nbsp;
+                                    <span class="hidden-tablet" >
+                                          {{queryParameters.rows}}
+                                    </span>
+                                    <b class="caret"></b>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li ><a ng-click="setRows('5')"><span class="glyphicon glyphicon-eye-close"></span>&nbsp;Show 5 Rows</a></li>
+                                <li ><a ng-click="setRows('10')"><span class="glyphicon glyphicon-eye-close"></span>&nbsp;Show 10 Rows</a></li>
+                                <li ><a ng-click="setRows('25')"><span class="glyphicon glyphicon-eye-close"></span>&nbsp;Show 25 Rows</a></li>
+                                <li ><a ng-click="setRows('50')"><span class="glyphicon glyphicon-eye-close"></span>&nbsp;Show 50 Rows</a></li>
+                                <li ><a ng-click="setRows('100')"><span class="glyphicon glyphicon-eye-close"></span>&nbsp;Show 100 Rows</a></li>
+                                <li ><a ng-click="setRows('500')"><span class="glyphicon glyphicon-eye-close"></span>&nbsp;Show 500 Rows</a></li>
+                                <li ><a ng-click="setRows('All')"><span class="glyphicon glyphicon-eye-close"></span>&nbsp;Show All Rows</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <button type="submit"
+                            ng-click="update(gridItem.id)"
+                            class="btn btn-default">
+                        <span class="glyphicon glyphicon-pencil"></span> Edit
+                    </button>
+                </td>
+                <td>
+                    <button type="submit"
+                            ng-click="remove(gridItem.id)"
+                            class="btn btn-default">
+                        <span class="glyphicon glyphicon-remove-circle"></span> Remove
+                    </button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
